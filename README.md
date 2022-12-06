@@ -14,6 +14,6 @@ When creating new branch, always use the structure of the branch anatomy.
 
 branch anatomy: type/title
 
-type: chore | feature | bugfix
+type: core | feature | bugfix
 
 pre-development branch is synced to the development branch once a week.
