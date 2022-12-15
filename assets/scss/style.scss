@@ -1,18 +1,21 @@
-@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli-book/css/bpg-nino-mtavruli-book.min.css");
-@import './components/header.scss';
-
-* {
-    box-sizing: border-box;
-    font-family: "BPG Nino Mtavruli Book", sans-serif;
-    margin: 0;
-}
+@import './components/reset';
+@import './components/header';
+@import './components/variables';
 
 .show {
     display: block !important;
 }
 
 .active {
-    color: $activeColor;
+    color: $activeColor !important;
+}
+
+.openedNav {
+    width: 250px !important;
+}
+
+.closedNav {
+    width: 0 !important;
 }
 
 section {

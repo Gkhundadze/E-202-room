@@ -1,3 +1,5 @@
+const tabs = document.getElementById("tabs"); //navigation tabs
+
 //tabs names for navigation
 const tabsContent = [
     { tabName: 'თავფურცელი', sectionName: 'slider' },
@@ -13,7 +15,6 @@ const tabsContent = [
 ];
 
 //adding all tabs in navigation
-const tabs = document.getElementById("tabs");
 tabsContent.forEach(tab => {
     let li = document.createElement('li');
 
@@ -34,19 +35,21 @@ function showSec(section) {
     closeNav();
 
     //change active tab
-    document.querySelector(`.active`).classList.remove('active');
+    document.querySelector('.active').classList.remove('active');
     document.querySelector(`.${section}`).classList.add('active');
 
     //show section
-    document.querySelector(`.show`).classList.remove('show');
+    document.querySelector('.show').classList.remove('show');
     document.querySelector(`#${section}_Sec`).classList.add('show');
 }
 
 //show and hide navigation bar on responsive
 function openNav() {
-    document.getElementById("tabs").style.width = "250px";
+    tabs.classList.remove('closedNav')
+    tabs.classList.add('openedNav')
 }
 
 function closeNav() {
-    document.getElementById("tabs").style.width = "0";
+    tabs.classList.remove('openedNav')
+    tabs.classList.add('closedNav')
 }
