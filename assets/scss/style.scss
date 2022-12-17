@@ -1,6 +1,7 @@
 @import './components/reset';
-@import './components/header';
 @import './components/variables';
+@import './components/header';
+@import './components/Sesavali';
 
 .show {
     display: block !important;
@@ -23,6 +24,6 @@ section {
     position: relative;
 }
 
-#responsive {
+.responsive {
     display: none;
 }

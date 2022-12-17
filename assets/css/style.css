@@ -130,6 +130,16 @@ header nav #tabs li:last-child {
     width: 100% !important;
   }
 }
+#Sesavali_Sec {
+  width: 90%;
+  margin: 100px auto;
+}
+#Sesavali_Sec p {
+  color: #333333;
+  font-size: 18px;
+  margin-top: 2rem;
+}
+
 .show {
   display: block !important;
 }
@@ -151,6 +161,6 @@ section {
   position: relative;
 }
 
-#responsive {
+.responsive {
   display: none;
 }
