@@ -3,14 +3,14 @@ const tabs = document.getElementById("tabs"); //navigation tabs
 //tabs names for navigation
 const tabsContent = [
     { tabName: 'თავფურცელი', sectionName: 'slider' },
-    { tabName: 'შესავალი', sectionName: 'Sesavali' },
-    { tabName: 'სამი ფიგურა', sectionName: 'sami_figura' },
-    { tabName: 'გაგრძელება', sectionName: 'gagrZeleba' },
-    { tabName: 'ეკოლოგია', sectionName: 'ekologia' },
-    { tabName: 'პატარა არსებები', sectionName: 'patara_arsebebi' },
-    { tabName: 'ვარსკვლავები', sectionName: 'varskvlavebi' },
-    { tabName: 'სიყვარული', sectionName: 'siyvaruli' },
-    { tabName: 'გალარეა', sectionName: 'galerea' },
+    { tabName: 'შესავალი', sectionName: 'introduction' },
+    { tabName: 'სამი ფიგურა', sectionName: 'three' },
+    { tabName: 'გაგრძელება', sectionName: 'continue' },
+    { tabName: 'ეკოლოგია', sectionName: 'ecology' },
+    { tabName: 'პატარა არსებები', sectionName: 'little' },
+    { tabName: 'ვარსკვლავები', sectionName: 'stars' },
+    { tabName: 'სიყვარული', sectionName: 'love' },
+    { tabName: 'გალარეა', sectionName: 'galery' },
     { tabName: 'პროექტის შესახებ', sectionName: 'about' }
 ];
 
@@ -45,11 +45,9 @@ function showSec(section) {
 
 //show and hide navigation bar on responsive
 function openNav() {
-    tabs.classList.remove('closedNav')
     tabs.classList.add('openedNav')
 }
 
 function closeNav() {
     tabs.classList.remove('openedNav')
-    tabs.classList.add('closedNav')
 }

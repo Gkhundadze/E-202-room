@@ -1,6 +1,6 @@
 header {
     background-color: #E1F4FF;
-    padding: 5px 0;
+    padding: 0.3rem 0;
 
     #title {
         padding: 1rem;
@@ -20,7 +20,7 @@ header {
         }
 
         p {
-            font-size: 30px;
+            font-size: 1.8rem;
             color: $lightTextColor;
             font-weight: 400;
         }
@@ -33,7 +33,7 @@ header {
             position: relative;
             list-style-type: none;
             width: 100%;
-            padding: 5px 0;
+            padding: 0.3rem 0;
             display: flex;
             justify-content: space-evenly;
 
@@ -49,8 +49,12 @@ header {
                 color: $lightTextColor;
                 border-right: 1px solid $lightTextColor;
                 font-weight: 600;
-                font-size: 15px;
+                font-size: 1rem;
                 cursor: pointer;
+            }
+
+            li[class~=active]{
+                color: $darkTextColor;
             }
 
             li:last-child {
@@ -85,7 +89,6 @@ header {
         }
 
         nav {
-
             #tabs {
                 display: grid;
                 position: fixed;
@@ -130,15 +133,9 @@ header {
                     }
                 }
             }
-        }
-    }
-}
 
-@media only screen and (min-width: 800px) {
-    header {
-        nav {
-            #tabs {
-                width: 100% !important;
+            #tabs[class~=openedNav]{
+                width: 15rem;
             }
         }
     }

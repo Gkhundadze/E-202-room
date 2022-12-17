@@ -9,7 +9,7 @@
 
 header {
   background-color: #E1F4FF;
-  padding: 5px 0;
+  padding: 0.3rem 0;
 }
 header #title {
   padding: 1rem;
@@ -27,7 +27,7 @@ header #title h1 {
   font-weight: 500;
 }
 header #title p {
-  font-size: 30px;
+  font-size: 1.8rem;
   color: #707070;
   font-weight: 400;
 }
@@ -38,7 +38,7 @@ header nav #tabs {
   position: relative;
   list-style-type: none;
   width: 100%;
-  padding: 5px 0;
+  padding: 0.3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,8 +58,11 @@ header nav #tabs li {
   color: #707070;
   border-right: 1px solid #707070;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 1rem;
   cursor: pointer;
+}
+header nav #tabs li[class~=active] {
+  color: #333333;
 }
 header nav #tabs li:last-child {
   border: none;
@@ -124,41 +127,27 @@ header nav #tabs li:last-child {
     position: relative;
     right: 15%;
   }
-}
-@media only screen and (min-width: 800px) {
-  header nav #tabs {
-    width: 100% !important;
+  header nav #tabs[class~=openedNav] {
+    width: 15rem;
   }
 }
-#Sesavali_Sec {
+#introduction_Sec {
   width: 90%;
   margin: 100px auto;
 }
-#Sesavali_Sec p {
+#introduction_Sec p {
   color: #333333;
-  font-size: 18px;
+  font-size: 1.2rem;
   margin-top: 2rem;
-}
-
-.show {
-  display: block !important;
-}
-
-.active {
-  color: #242424 !important;
-}
-
-.openedNav {
-  width: 250px !important;
-}
-
-.closedNav {
-  width: 0 !important;
 }
 
 section {
   display: none;
   position: relative;
+}
+
+section[class~=show] {
+  display: block;
 }
 
 .responsive {
