@@ -1,28 +1,17 @@
 @import './components/reset';
-@import './components/header';
 @import './components/variables';
-
-.show {
-    display: block !important;
-}
-
-.active {
-    color: $activeColor !important;
-}
-
-.openedNav {
-    width: 250px !important;
-}
-
-.closedNav {
-    width: 0 !important;
-}
+@import './components/header';
+@import './components/Sesavali';
 
 section {
     display: none;
     position: relative;
 }
 
-#responsive {
+section[class~=show]{
+    display: block;
+}
+
+.responsive {
     display: none;
 }
