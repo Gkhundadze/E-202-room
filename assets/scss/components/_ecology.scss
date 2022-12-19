@@ -1,0 +1,21 @@
+#ecology_Sec {
+    img {
+        width: 100%;
+    }
+
+    #ecology_info {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        color: $darkTextColor;
+        padding: 1rem;
+        font-size: 1.3rem;
+
+        p {
+            margin-top: 1rem;
+        }
+    }
+}
