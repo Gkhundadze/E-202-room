@@ -178,6 +178,25 @@ header nav #tabs li:last-child {
   margin-bottom: 10px;
 }
 
+#ecology_Sec img {
+  width: 100%;
+}
+#ecology_Sec #ecology_info {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  color: #333333;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+#ecology_Sec #ecology_info p {
+  margin-top: 1rem;
+}
+
 section {
   display: none;
   position: relative;
