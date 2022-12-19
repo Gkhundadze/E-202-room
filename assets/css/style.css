@@ -141,6 +141,24 @@ header nav #tabs li:last-child {
   margin-top: 2rem;
 }
 
+#three_Sec img {
+  width: 100%;
+}
+#three_Sec #three_figure_info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  background-color: white;
+  color: #333333;
+  font-size: 20px;
+  padding: 1rem;
+  margin: 1rem;
+}
+#three_Sec #three_figure_info p {
+  margin-top: 1rem;
+}
+
 section {
   display: none;
   position: relative;
