@@ -197,6 +197,25 @@ header nav #tabs li:last-child {
   margin-top: 1rem;
 }
 
+#little_Sec img {
+  width: 100%;
+}
+#little_Sec #little_info {
+  position: absolute;
+  width: 50%;
+  top: 80%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  color: #333333;
+  padding: 1rem;
+  font-size: 20px;
+}
+#little_Sec #little_info h2 {
+  margin-bottom: 10px;
+}
+
 section {
   display: none;
   position: relative;
