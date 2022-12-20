@@ -151,7 +151,7 @@ header nav #tabs li:last-child {
   width: 50%;
   background-color: white;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.2rem;
   padding: 1rem;
   margin: 1rem;
 }
@@ -172,10 +172,10 @@ header nav #tabs li:last-child {
   background-color: white;
   color: #333333;
   padding: 1rem;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 #continue_Sec #continue_info h2 {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 #ecology_Sec img {
@@ -210,10 +210,10 @@ header nav #tabs li:last-child {
   background-color: white;
   color: #333333;
   padding: 1rem;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 #little_Sec #little_info h2 {
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
 }
 
 #stars_Sec img {
@@ -229,9 +229,28 @@ header nav #tabs li:last-child {
   background-color: white;
   color: #333333;
   padding: 1rem;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 #stars_Sec #stars_info h2 {
+  margin-bottom: 0.8rem;
+}
+
+#love_Sec img {
+  width: 100%;
+}
+#love_Sec #love_info {
+  position: absolute;
+  width: 30%;
+  top: 45%;
+  left: 55%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  color: #333333;
+  padding: 1rem;
+  font-size: 20px;
+}
+#love_Sec #love_info h2 {
   margin-bottom: 10px;
 }
 
