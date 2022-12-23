@@ -1,21 +1,21 @@
-#stars_Sec {
+#love_Sec {
     img {
         width: 100%;
     }
 
-    #stars_info {
+    #love_info {
         h2 {
-            margin-bottom: 0.8rem;
+            margin-bottom: 10px;
         }
 
         position: absolute;
-        width: 50%;
-        top: 60%;
-        left: 50%;
+        width: 30%;
+        top: 45%;
+        left: 55%;
         transform: translate(-50%, -50%);
         background-color: white;
         color: $darkTextColor;
         padding: 1rem;
-        font-size: 1.2rem;
+        font-size: 20px;
     }
 }
