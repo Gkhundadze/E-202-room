@@ -27,7 +27,36 @@
 
     <main>
         <div class="desktop">
-            <section id="slider_Sec" class="show">slider</section>
+            <section id="slider_Sec" class="show">
+                <div class="mySlides">
+                    <img src="./assets/images/slide1.png">
+                    <i class="fa-solid fa-plus" style="top: 35%; left: 12%;" onclick="showSec('continue')"></i>
+                    <i class="fa-solid fa-plus" style="top: 25%; left: 27%;" onclick="showSec('stars')"></i>
+                    <i class="fa-solid fa-plus" style="top: 40%; left: 34%;" onclick="showSec('love')"></i>
+                    <i class="fa-solid fa-plus" style="top: 18%; left: 46%;" onclick="showSec('ecology')"></i>
+                    <i class="fa-solid fa-plus" style="top: 65%; left: 64%;" onclick="showSec('little')"></i>
+                    <i class="fa-solid fa-plus" style="top: 40%; left: 80%;" onclick="showSec('three')"></i>
+                </div>
+
+                <div class="mySlides">
+                    <img src="./assets/images/slide2.png">
+                    <i class="fa-solid fa-plus" style="top: 20%; left: 13%;" onclick="showSec('ecology')"></i>
+                    <i class="fa-solid fa-plus" style="top: 68%; left: 30%;" onclick="showSec('little')"></i>
+                    <i class="fa-solid fa-plus" style="top: 38%; left: 47%;" onclick="showSec('three')"></i>
+                    <i class="fa-solid fa-plus" style="top: 30%; left: 82%;" onclick="showSec('ecology')"></i>
+                </div>
+
+                <div class="mySlides">
+                    <img src="./assets/images/slide3.png">
+                    <i class="fa-solid fa-plus" style="top: 40%; left: 15%;" onclick="showSec('three')"></i>
+                    <i class="fa-solid fa-plus" style="top: 30%; left: 50%;" onclick="showSec('ecology')"></i>
+                    <i class="fa-solid fa-plus" style="top: 43%; left: 70%;" onclick="showSec('ecology')"></i>
+                    <i class="fa-solid fa-plus" style="top: 30%; left: 88%;" onclick="showSec('continue')"></i>
+                </div>
+
+                <i id="arrow-left" class="fa-solid fa-chevron-left" onclick="plusSlides(-1)"></i>
+                <i id="arrow-rigth" class="fa-solid fa-chevron-right" onclick="plusSlides(1)"></i>
+            </section>
 
             <section id="introduction_Sec">
                 <p>

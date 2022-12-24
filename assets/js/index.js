@@ -51,3 +51,49 @@ function openNav() {
 function closeNav() {
     tabs.classList.remove('openedNav')
 }
+
+
+
+
+
+let slideIndex = 2;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    if (n > 0) {
+        for (i of document.getElementsByClassName('mySlides')) {
+            i.style.animationName = 'slide_right';
+        }
+    } else {
+        for (i of document.getElementsByClassName('mySlides')) {
+            i.style.animationName = 'slide_left';
+        }
+    }
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName("mySlides");
+
+    if (n == slides.length) {
+        document.getElementById("arrow-rigth").style.display = 'none';
+    } else {
+        document.getElementById("arrow-rigth").style.display = 'block';
+    }
+
+    if (n == 1) {
+        document.getElementById("arrow-left").style.display = 'none';
+    } else {
+        document.getElementById("arrow-left").style.display = 'block';
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+}

@@ -1,0 +1,49 @@
+#slider_Sec {
+    position: relative;
+
+    .mySlides {
+        display: none;
+        position: relative;
+        animation-name: slide_right;
+        animation-duration: 1s;
+
+        img {
+            width: 100%;
+        }
+
+        .fa-plus {
+            position: absolute;
+            color: $lightTextColor;
+            background-color: white;
+            border: 3px solid $lightTextColor;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            padding: 3px 5px;
+            cursor: pointer;
+        }
+    }
+
+    [class*="fa-chevron-"] {
+        position: absolute;
+        font-size: 70px;
+        color: $lightTextColor;
+        background-color: rgba(255, 255, 255, 0.7);
+        top: 50%;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .fa-chevron-right {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #slider_Sec {
+        .mySlides {
+            .fa-plus {
+                font-size: 1rem;
+            }
+        }
+    }
+}
