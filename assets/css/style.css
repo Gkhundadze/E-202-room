@@ -1,4 +1,8 @@
 @import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli-book/css/bpg-nino-mtavruli-book.min.css");
+body {
+  overflow: hidden;
+}
+
 * {
   font-family: "BPG Nino Mtavruli Book", sans-serif;
   -webkit-box-sizing: border-box;
@@ -7,6 +11,55 @@
   padding: 0;
 }
 
+@-webkit-keyframes slide_right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slide_right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+@-webkit-keyframes slide_left {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes slide_left {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+  }
+}
+@-webkit-keyframes slide_up {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+@keyframes slide_up {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0;
+  }
+}
 header {
   background-color: #E1F4FF;
   padding: 0.3rem 0;
@@ -35,42 +88,36 @@ header nav {
   background-color: white;
 }
 header nav #tabs {
-  position: relative;
-  list-style-type: none;
-  width: 100%;
-  padding: 0.3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  padding: 0.2rem 0;
 }
 header nav #tabs #closebtn {
   display: none;
 }
 header nav #tabs li {
   display: block;
-  width: 100%;
+  float: left;
   text-align: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  color: #707070;
-  border-right: 1px solid #707070;
-  font-weight: 600;
   font-size: 1rem;
+  color: #707070;
+  opacity: 0.8;
+  border-right: 1px solid #707070;
+  padding: 0.3rem 0.5rem;
   cursor: pointer;
 }
 header nav #tabs li[class~=active] {
   color: #333333;
+  opacity: 1;
 }
 header nav #tabs li:last-child {
   border: none;
 }
 
-@media only screen and (max-width: 1250px) {
-  header nav ul li {
-    font-size: 10px;
+@media only screen and (max-width: 950px) {
+  header nav #tabs li {
+    font-size: 0.8rem;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -104,8 +151,9 @@ header nav #tabs li:last-child {
             align-items: center;
     border: none;
     text-align: left;
-    font-size: 20px;
+    font-size: 1.2rem;
     height: 100%;
+    margin-left: 2rem;
   }
   header nav #tabs li::after {
     content: "";
@@ -113,7 +161,7 @@ header nav #tabs li:last-child {
     position: absolute;
     bottom: 0;
     height: 1px;
-    width: 50px;
+    width: 3rem;
     background-color: #707070;
   }
   header nav #tabs #closebtn {
@@ -121,19 +169,65 @@ header nav #tabs li:last-child {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    font-size: 30px;
+    font-size: 1.8rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   header nav #tabs #closebtn .fa-xmark {
     position: relative;
-    right: 15%;
+    left: -1.5rem;
   }
   header nav #tabs[class~=openedNav] {
     width: 15rem;
   }
 }
+#slider_Sec {
+  position: relative;
+}
+#slider_Sec .mySlides {
+  display: none;
+  position: relative;
+  -webkit-animation-name: slide_right;
+          animation-name: slide_right;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#slider_Sec .mySlides img {
+  width: 100%;
+}
+#slider_Sec .mySlides .fa-plus {
+  position: absolute;
+  color: #707070;
+  background-color: white;
+  border: 3px solid #707070;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+#slider_Sec [class*=fa-chevron-] {
+  position: absolute;
+  font-size: 70px;
+  color: #707070;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+#slider_Sec .fa-chevron-right {
+  right: 0;
+}
+
+@media screen and (max-width: 1150px) {
+  #slider_Sec .mySlides .fa-plus {
+    font-size: 1rem;
+  }
+}
 #introduction_Sec {
   width: 90%;
-  margin: 100px auto;
+  padding-top: 5rem;
+  margin: auto;
 }
 #introduction_Sec p {
   color: #333333;
@@ -248,15 +342,22 @@ header nav #tabs li:last-child {
   background-color: white;
   color: #333333;
   padding: 1rem;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 #love_Sec #love_info h2 {
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
 }
 
 section {
   display: none;
   position: relative;
+}
+
+section:not(:first-child) {
+  -webkit-animation-name: slide_up;
+          animation-name: slide_up;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 section[class~=show] {
