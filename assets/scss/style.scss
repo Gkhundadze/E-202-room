@@ -1,28 +1,30 @@
 @import './components/reset';
-@import './components/header';
 @import './components/variables';
-
-.show {
-    display: block !important;
-}
-
-.active {
-    color: $activeColor !important;
-}
-
-.openedNav {
-    width: 250px !important;
-}
-
-.closedNav {
-    width: 0 !important;
-}
+@import './components/animations';
+@import './components/header';
+@import './components/slider';
+@import './components/Sesavali';
+@import './components/threeFigure';
+@import './components/continue';
+@import './components/ecology';
+@import './components/littleCreatures';
+@import './components/stars';
+@import './components/love';
 
 section {
     display: none;
     position: relative;
 }
 
-#responsive {
+section:not(:first-child) {
+    animation-name: slide_up;
+    animation-duration: 0.6s;
+}
+
+section[class~=show] {
+    display: block;
+}
+
+.responsive {
     display: none;
 }

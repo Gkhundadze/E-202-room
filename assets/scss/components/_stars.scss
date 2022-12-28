@@ -1,0 +1,21 @@
+#stars_Sec {
+    img {
+        width: 100%;
+    }
+
+    #stars_info {
+        h2 {
+            margin-bottom: 0.8rem;
+        }
+
+        position: absolute;
+        width: 50%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        color: $darkTextColor;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+}
