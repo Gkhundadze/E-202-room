@@ -1,21 +1,30 @@
 #little_Sec {
-    img {
-        width: 100%;
+    background-image: url("../images/04_pataraArsebebi_background.svg");
+    background-position-x: -50rem;
+
+    img{
+        height: 15rem;
+        left: 5%;
+        bottom: 2rem;
     }
 
     #little_info {
-        h2 {
-            margin-bottom: 0.8rem;
-        }
-
         position: absolute;
-        width: 50%;
-        top: 80%;
-        left: 60%;
-        transform: translate(-50%, -50%);
-        background-color: white;
+        bottom: 5%;
+        right: 10%;
+        width: 45%;
+        background-color: $backgroundColor;
         color: $darkTextColor;
         padding: 1rem;
-        font-size: 1.2rem;
+        
+        h2 {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
     }
 }

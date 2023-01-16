@@ -1,9 +1,21 @@
+@font-face {
+    font-family: "mainFont";
+    src: url(../fonts/bpg_arial_2009.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nino_Mtavruli";
+    src: url(../fonts/bpg_nino_mtavruli_book.ttf) format("truetype");
+    font-display: swap;
+}
+
 @import './components/reset';
 @import './components/variables';
 @import './components/animations';
 @import './components/header';
 @import './components/slider';
-@import './components/Sesavali';
+@import './components/introduction';
 @import './components/threeFigure';
 @import './components/continue';
 @import './components/ecology';
@@ -14,11 +26,16 @@
 section {
     display: none;
     position: relative;
-}
-
-section:not(:first-child) {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: calc(100vh - 9.6rem);
     animation-name: slide_up;
-    animation-duration: 0.6s;
+    animation-duration: 0.4s;
+
+    img {
+        position: absolute;
+    }
 }
 
 section[class~=show] {
