@@ -1,21 +1,52 @@
 #continue_Sec {
-    img {
-        width: 100%;
+    #continue_back_left {
+        position: relative;
+        object-fit: cover;
+        object-position: 0 0;
+        height: 100%;
+        width: 50%;
+        float: left;
+    }
+
+    #continue_back_right {
+        position: relative;
+        object-fit: cover;
+        object-position: 100% 0;
+        height: 100%;
+        width: 50%;
+        float: right;
+    }
+
+    #continue_obj_left {
+        height: 22rem;
+        left: 5%;
+        bottom: 3rem;
+    }
+
+    #continue_obj_right {
+        height: 23rem;
+        right: 1%;
+        bottom: 2rem;
     }
 
     #continue_info {
-        h2 {
-            margin-bottom: 1rem;
-        }
-
         position: absolute;
         width: 50%;
         top: 60%;
-        left: 50%;
+        left: 45%;
         transform: translate(-50%, -50%);
-        background-color: white;
+        background-color: $backgroundColor;
         color: $darkTextColor;
         padding: 1rem;
-        font-size: 1.2rem;
+
+        h2 {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
     }
 }

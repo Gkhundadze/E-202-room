@@ -1,6 +1,8 @@
 header {
+    position: relative;
     background-color: #E1F4FF;
     padding: 0.3rem 0;
+    height: 9.6rem;
 
     #title {
         padding: 1rem;
@@ -16,18 +18,20 @@ header {
 
         h1 {
             color: $darkTextColor;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         p {
-            font-size: 1.8rem;
+            // font-family: "Nino_Mtavruli", sans-serif;
             color: $lightTextColor;
-            font-weight: 400;
+            font-size: 1.8rem;
+            font-weight: 100;
         }
     }
 
     nav {
         background-color: white;
+        padding-left: 0.6rem;
 
         #tabs {
             display: flex;
@@ -43,14 +47,13 @@ header {
                 text-align: center;
                 font-size: 1rem;
                 color: $lightTextColor;
-                opacity: 0.8;
                 border-right: 1px solid $lightTextColor;
                 padding: 0.3rem 0.5rem;
                 cursor: pointer;
             }
 
             li[class~=active] {
-                color: $darkTextColor;
+                color: $activeColor;
                 opacity: 1;
             }
 
@@ -61,8 +64,14 @@ header {
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1060px) {
     header {
+        #title {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
         nav {
             #tabs {
                 li {
@@ -73,7 +82,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 890px) {
     header {
         #title {
             .fa-bars {

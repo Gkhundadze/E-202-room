@@ -1,21 +1,31 @@
 #love_Sec {
-    img {
-        width: 100%;
+    background-image: url("../images/06_sikvaruli_background.svg");
+    background-position-x: -10rem;
+
+    img{
+        height: 22rem;
+        left: 25%;
+        bottom: 2rem;
     }
 
     #love_info {
-        h2 {
-            margin-bottom: 0.8rem;
-        }
-
         position: absolute;
-        width: 30%;
-        top: 45%;
-        left: 55%;
-        transform: translate(-50%, -50%);
-        background-color: white;
+        width: 33%;
+        top: 10%;
+        left: 50%;
+        background-color: $backgroundColor;
         color: $darkTextColor;
         padding: 1rem;
         font-size: 1.3rem;
+    }
+    
+    h2 {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
     }
 }

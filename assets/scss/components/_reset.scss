@@ -1,12 +1,30 @@
-@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli-book/css/bpg-nino-mtavruli-book.min.css");
-
-body{
+body {
     overflow: hidden;
+    background-color: rgb(226, 244, 255);
 }
 
 * {
-    font-family: "BPG Nino Mtavruli Book", sans-serif;
+    font-family: "mainFont";
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nino_Mtavruli", sans-serif;
+}
+
+@media screen and (min-width: 1980px) {
+    :root {
+        font-size: 25px;
+    }
 }

@@ -1,29 +1,9 @@
-@keyframes slide_right {
-    from {
-        left: 100%;
-    }
-
-    to {
-        left: 0;
-    }
-}
-
-@keyframes slide_left {
-    from {
-        right: 100%;
-    }
-
-    to {
-        right: 0;
-    }
-}
-
 @keyframes slide_up {
     from {
-        margin-top: 100%;
+        transform: translateY(100%);
     }
 
     to {
-        margin-top: 0;
+        transform: translateY(0);
     }
 }
