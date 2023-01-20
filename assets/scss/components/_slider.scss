@@ -1,49 +1,31 @@
 #slider_Sec {
     position: relative;
+    height: calc(100vh - 9.6rem);
 
-    .mySlides {
-        display: none;
-        position: relative;
-        animation-name: slide_right;
-        animation-duration: 1s;
+    .mySlide {
+        position: absolute;
+        height: inherit;
+        transition: all 0.7s linear;
 
-        img {
-            width: 100%;
-        }
-
-        .fa-plus {
-            position: absolute;
-            color: $lightTextColor;
-            background-color: white;
-            border: 3px solid $lightTextColor;
-            border-radius: 50px;
-            font-size: 1.5rem;
-            padding: 3px 5px;
-            cursor: pointer;
+        embed {
+            bottom: 0;
+            height: 100%;
+            width: auto;
         }
     }
 
-    [class*="fa-chevron-"] {
+    [class*="fa-angle-"] {
         position: absolute;
         font-size: 70px;
         color: $lightTextColor;
         background-color: rgba(255, 255, 255, 0.7);
         top: 50%;
-        margin: 10px;
+        margin: 0.8rem;
+        padding: 0.5rem;
         cursor: pointer;
     }
 
-    .fa-chevron-right {
+    .fa-angle-right {
         right: 0;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    #slider_Sec {
-        .mySlides {
-            .fa-plus {
-                font-size: 1rem;
-            }
-        }
     }
 }
