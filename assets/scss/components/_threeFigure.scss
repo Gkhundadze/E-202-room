@@ -1,8 +1,13 @@
 #three_Sec {
-    background-image: url("../images/01_samiPigura_background.svg");
-    background-position-x: -70rem;
+    #continue_back {
+        position: relative;
+        object-fit: cover;
+        object-position: 42% 0;
+        transform: translateX(-42%);
+        height: 100%;
+    }
 
-    img {
+    #continue_obj {
         height: 20rem;
         left: 11%;
         bottom: 2rem;
