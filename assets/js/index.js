@@ -1,5 +1,7 @@
 const tabs = document.getElementById("tabs"); //navigation tabs
 const slide = document.querySelector(".mySlide"); //slide
+const arrowLeft = document.querySelector("#arrow-left");
+const arrowRight = document.querySelector("#arrow-right");
 
 //tabs names for navigation
 const tabsContent = [
@@ -54,10 +56,15 @@ function plusSlides(n) {
 }
 
 function showSlides() {
-    if (slideIndex < 0) {
+    if (slideIndex <= 0) {
         slideIndex = 0;
+        arrowLeft.classList.add("hide");
     } else if (slideIndex > 100) {
         slideIndex = 100;
+        arrowRight.classList.add("hide");
+    } else {
+        arrowLeft.classList.remove("hide");
+        arrowRight.classList.remove("hide");
     }
 
     slide.style.left = `${slideIndex}%`;
