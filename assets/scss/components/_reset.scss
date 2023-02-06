@@ -1,6 +1,6 @@
 body {
     overflow: hidden;
-    background-color: rgb(226, 244, 255);
+    background-color: $backgroundColor;
 }
 
 * {
@@ -14,6 +14,29 @@ body {
     display: none;
 }
 
+section {
+    display: none;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 9.6rem);
+    overflow: hidden;
+    animation-name: slide_up;
+    animation-duration: 0.4s;
+
+    img {
+        position: absolute;
+    }
+}
+
+section[class~=show] {
+    display: block;
+}
+
+.responsive {
+    display: none;
+}
+
 h1,
 h2,
 h3,
@@ -23,12 +46,28 @@ h6 {
     font-family: "Nino_Mtavruli", sans-serif;
 }
 
-.hide {
-    display: none;
-}
-
 @media screen and (min-width: 1980px) {
     :root {
         font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    body {
+        background-color: white;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .responsive {
+        display: block;
+
+        section{
+            position: relative;
+            overflow: scroll;
+            height: calc(100vh - 4rem);
+        }
     }
 }
