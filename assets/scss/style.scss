@@ -10,8 +10,8 @@
     font-display: swap;
 }
 
-@import './components/reset';
 @import './components/variables';
+@import './components/reset';
 @import './components/animations';
 @import './components/header';
 @import './components/slider';
@@ -22,26 +22,3 @@
 @import './components/littleCreatures';
 @import './components/stars';
 @import './components/love';
-
-section {
-    display: none;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    height: calc(100vh - 9.6rem);
-    animation-name: slide_up;
-    animation-duration: 0.4s;
-
-    img {
-        position: absolute;
-    }
-}
-
-section[class~=show] {
-    display: block;
-}
-
-.responsive {
-    display: none;
-}

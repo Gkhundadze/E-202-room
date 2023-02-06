@@ -42,8 +42,13 @@ function showSec(section) {
     document.querySelector(`.${section}`).classList.add('active');
 
     //show section
-    document.querySelector('.show').classList.remove('show');
-    document.querySelector(`#${section}_Sec`).classList.add('show');
+    let fromSec = document.querySelectorAll('.show'); //sections that is shown
+    fromSec[0].classList.remove('show');
+    fromSec[1].classList.remove('show');
+
+    let toSec = document.querySelectorAll(`.${section}_Sec`); //sections that should be shown
+    toSec[0].classList.add('show');
+    toSec[1].classList.add('show');
 }
 
 // switch between slides
