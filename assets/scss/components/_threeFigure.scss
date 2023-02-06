@@ -1,42 +1,76 @@
-#three_Sec {
-    #continue_back {
-        position: relative;
-        object-fit: cover;
-        object-position: 42% 0;
-        transform: translateX(-42%);
-        height: 100%;
+.desktop{
+    #three_Sec {
+        #continue_back {
+            position: relative;
+            object-fit: cover;
+            object-position: 42% 0;
+            transform: translateX(-42%);
+            height: 100%;
+        }
+    
+        #continue_obj {
+            height: 20rem;
+            left: 11%;
+            bottom: 2rem;
+        }
+    
+        #three_figure_info {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            background-color: $backgroundColor;
+            color: $darkTextColor;
+            padding: 1rem;
+            margin: 1rem;
+    
+            h2 {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+    
+            #three_figure_p {
+                height: 100%;
+                overflow: scroll;
+    
+                p {
+                    font-size: 1.1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+    
+        }
     }
+}
 
-    #continue_obj {
-        height: 20rem;
-        left: 11%;
-        bottom: 2rem;
-    }
-
-    #three_figure_info {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        background-color: $backgroundColor;
+.responsive {
+    .three_Sec {
         color: $darkTextColor;
-        padding: 1rem;
-        margin: 1rem;
+        background-color: white;
 
         h2 {
-            font-size: 2rem;
-            font-weight: 500;
+            font-weight: normal;
+            padding: 1rem 1rem 0;
         }
 
-        #three_figure_p {
-            height: 100%;
-            overflow: scroll;
+        .three_Sec_Back {
+            background-color: $backgroundColor;
+            background-image: url(../images/01_samiPigura_background.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 52%;
 
-            p {
-                font-size: 1.1rem;
-                margin-bottom: 1rem;
+            img {
+                position: relative;
+                padding: 10rem 1rem 0;
+                left: 50%;
+                transform: translateX(-50%);
+                max-height: 30rem;
             }
         }
 
+        p {
+            margin: 1rem;
+        }
     }
 }
