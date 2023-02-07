@@ -42,13 +42,11 @@ function showSec(section) {
     document.querySelector(`.${section}`).classList.add('active');
 
     //show section
-    let fromSec = document.querySelectorAll('.show'); //sections that is shown
-    fromSec[0].classList.remove('show');
-    fromSec[1].classList.remove('show');
+    let fromSec = document.querySelector('.show'); //sections that is shown
+    fromSec.classList.remove('show');
 
-    let toSec = document.querySelectorAll(`.${section}_Sec`); //sections that should be shown
-    toSec[0].classList.add('show');
-    toSec[1].classList.add('show');
+    let toSec = document.querySelector(`.${section}_Sec`); //sections that should be shown
+    toSec.classList.add('show');
 }
 
 // switch between slides
@@ -83,4 +81,19 @@ function openNav() {
 
 function closeNav() {
     tabs.classList.remove('openedNav')
+}
+
+//listen windows size on resize and load
+['resize', 'load'].forEach(evt =>
+    window.addEventListener(evt, sizeChange)
+);
+
+function sizeChange() {
+    if (window.innerWidth > 890) {
+        document.querySelector('main').classList.remove('responsive');
+        document.querySelector('main').classList.add('desktop');
+    } else {
+        document.querySelector('main').classList.add('responsive');
+        document.querySelector('main').classList.remove('desktop');
+    }
 }

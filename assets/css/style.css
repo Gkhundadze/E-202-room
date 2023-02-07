@@ -110,7 +110,7 @@ header #title {
 }
 header #title .fa-bars {
   float: left;
-  padding-right: 1rem;
+  padding-right: 0.8rem;
   color: #707070;
   font-size: x-large;
   display: none;
@@ -165,6 +165,14 @@ header nav #tabs li:last-child {
   }
 }
 @media only screen and (max-width: 890px) {
+  header {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  header #title {
+    padding-bottom: 0;
+  }
   header #title .fa-bars {
     display: block;
   }
@@ -226,6 +234,14 @@ header nav #tabs li:last-child {
     width: 15rem;
   }
 }
+@media only screen and (max-width: 355px) {
+  header {
+    height: 4rem;
+  }
+  header #title h1 {
+    font-size: 1.5rem;
+  }
+}
 #slider_Sec {
   position: relative;
   height: calc(100vh - 9.6rem);
@@ -260,6 +276,9 @@ header nav #tabs li:last-child {
   padding: 5% 5% 0 5%;
   overflow: scroll;
 }
+.desktop .introduction_Sec h2 {
+  display: none;
+}
 .desktop .introduction_Sec p {
   color: rgba(51, 51, 51, 0.8235294118);
   font-size: 1.2rem;
@@ -272,7 +291,7 @@ header nav #tabs li:last-child {
   padding: 1rem;
 }
 .responsive .introduction_Sec h2 {
-  font-weight: normal;
+  display: block;
 }
 .responsive .introduction_Sec p {
   margin-bottom: 1rem;
