@@ -297,7 +297,7 @@ header nav #tabs li:last-child {
   margin-bottom: 1rem;
 }
 
-#three_Sec #continue_back {
+.desktop #three_Sec #continue_back {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
@@ -307,12 +307,12 @@ header nav #tabs li:last-child {
           transform: translateX(-42%);
   height: 100%;
 }
-#three_Sec #continue_obj {
+.desktop #three_Sec #continue_obj {
   height: 20rem;
   left: 11%;
   bottom: 2rem;
 }
-#three_Sec #three_figure_info {
+.desktop #three_Sec #three_figure_info {
   position: absolute;
   top: 0;
   right: 0;
@@ -322,17 +322,44 @@ header nav #tabs li:last-child {
   padding: 1rem;
   margin: 1rem;
 }
-#three_Sec #three_figure_info h2 {
+.desktop #three_Sec #three_figure_info h2 {
   font-size: 2rem;
   font-weight: 500;
 }
-#three_Sec #three_figure_info #three_figure_p {
+.desktop #three_Sec #three_figure_info #three_figure_p {
   height: 100%;
   overflow: scroll;
 }
-#three_Sec #three_figure_info #three_figure_p p {
+.desktop #three_Sec #three_figure_info #three_figure_p p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
+}
+
+.responsive .three_Sec {
+  color: rgba(51, 51, 51, 0.8235294118);
+  background-color: white;
+}
+.responsive .three_Sec h2 {
+  font-weight: normal;
+  padding: 1rem 1rem 0;
+}
+.responsive .three_Sec .three_Sec_Back {
+  background-color: rgb(226, 244, 255);
+  background-image: url(../images/01_samiPigura_background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 52%;
+}
+.responsive .three_Sec .three_Sec_Back img {
+  position: relative;
+  padding: 10rem 1rem 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-height: 30rem;
+}
+.responsive .three_Sec p {
+  margin: 1rem;
 }
 
 #continue_Sec #continue_back_left {
