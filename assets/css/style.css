@@ -297,7 +297,7 @@ header nav #tabs li:last-child {
   margin-bottom: 1rem;
 }
 
-.desktop #three_Sec #continue_back {
+.desktop .three_Sec #three_Sec_back {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
@@ -307,30 +307,36 @@ header nav #tabs li:last-child {
           transform: translateX(-42%);
   height: 100%;
 }
-.desktop #three_Sec #continue_obj {
+
+.desktop .three_Sec #three_Sec_obj {
   height: 20rem;
   left: 11%;
   bottom: 2rem;
 }
-.desktop #three_Sec #three_figure_info {
+.desktop .three_Sec #three_figure_info {
   position: absolute;
   top: 0;
   right: 0;
   width: 50%;
-  background-color: rgb(226, 244, 255);
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  max-height: 90%;
+  background-color: rgba(255, 255, 255, 0.9);
   color: rgba(51, 51, 51, 0.8235294118);
   padding: 1rem;
   margin: 1rem;
+  overflow: scroll;
 }
-.desktop #three_Sec #three_figure_info h2 {
+.desktop .three_Sec #three_figure_info .three_Sec_resp {
+  display: none;
+}
+
+.desktop .three_Sec #three_figure_info h2 {
   font-size: 2rem;
   font-weight: 500;
 }
-.desktop #three_Sec #three_figure_info #three_figure_p {
-  height: 100%;
-  overflow: scroll;
-}
-.desktop #three_Sec #three_figure_info #three_figure_p p {
+.desktop .three_Sec #three_figure_info p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
@@ -339,18 +345,27 @@ header nav #tabs li:last-child {
   color: rgba(51, 51, 51, 0.8235294118);
   background-color: white;
 }
+
+.responsive .three_Sec #three_Sec_back,
+.responsive .three_Sec #three_Sec_obj {
+  display: none;
+}
+
 .responsive .three_Sec h2 {
   font-weight: normal;
   padding: 1rem 1rem 0;
 }
-.responsive .three_Sec .three_Sec_Back {
+
+.responsive .three_Sec .three_Sec_resp {
+  display: block;
   background-color: rgb(226, 244, 255);
   background-image: url(../images/01_samiPigura_background.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 52%;
 }
-.responsive .three_Sec .three_Sec_Back img {
+
+.responsive .three_Sec .three_Sec_resp img {
   position: relative;
   padding: 10rem 1rem 0;
   left: 50%;
