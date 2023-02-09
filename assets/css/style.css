@@ -377,7 +377,7 @@ header nav #tabs li:last-child {
   margin: 1rem;
 }
 
-#continue_Sec #continue_back_left {
+.desktop .continue_Sec #continue_back_left {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
@@ -387,7 +387,7 @@ header nav #tabs li:last-child {
   width: 50%;
   float: left;
 }
-#continue_Sec #continue_back_right {
+.desktop .continue_Sec #continue_back_right {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
@@ -397,34 +397,93 @@ header nav #tabs li:last-child {
   width: 50%;
   float: right;
 }
-#continue_Sec #continue_obj_left {
+.desktop .continue_Sec #continue_obj_left {
   height: 22rem;
   left: 5%;
   bottom: 3rem;
 }
-#continue_Sec #continue_obj_right {
+.desktop .continue_Sec #continue_obj_right {
   height: 23rem;
   right: 1%;
   bottom: 2rem;
 }
-#continue_Sec #continue_info {
+.desktop .continue_Sec #continue_info {
   position: absolute;
   width: 50%;
   top: 60%;
   left: 45%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: rgb(226, 244, 255);
+  background-color: rgba(255, 255, 255, 0.9);
   color: rgba(51, 51, 51, 0.8235294118);
   padding: 1rem;
+  z-index: 1;
 }
-#continue_Sec #continue_info h2 {
+.desktop .continue_Sec #continue_info h2 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   font-size: 2rem;
 }
-#continue_Sec #continue_info p {
+.desktop .continue_Sec #continue_info #continue_images_resp {
+  display: none;
+}
+.desktop .continue_Sec #continue_info p {
   font-size: 1rem;
+}
+
+.responsive .continue_Sec #continue_back_left,
+.responsive .continue_Sec #continue_obj_left {
+  display: none;
+}
+.responsive .continue_Sec #continue_back_right {
+  background-color: rgb(226, 244, 255);
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 0;
+     object-position: 100% 0;
+  height: 100%;
+  width: 100%;
+  float: right;
+}
+.responsive .continue_Sec #continue_obj_right {
+  position: relative;
+  height: 23rem;
+  float: right;
+  top: 12rem;
+}
+.responsive .continue_Sec #continue_info {
+  position: relative;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgba(51, 51, 51, 0.8235294118);
+}
+.responsive .continue_Sec #continue_info h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 1rem 1rem 0;
+}
+.responsive .continue_Sec #continue_info #continue_images_resp {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.responsive .continue_Sec #continue_info #continue_images_resp #continue_back_resp {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: rgb(226, 244, 255);
+  height: 100%;
+}
+.responsive .continue_Sec #continue_info #continue_images_resp #continue_obj_resp {
+  position: relative;
+  height: 28rem;
+  padding: 5rem 0 2rem 2rem;
+}
+.responsive .continue_Sec #continue_info p {
+  font-size: 1rem;
+  margin: 1rem;
 }
 
 #ecology_Sec #ecology_back_left {

@@ -1,52 +1,124 @@
-#continue_Sec {
-    #continue_back_left {
-        position: relative;
-        object-fit: cover;
-        object-position: 0 0;
-        height: 100%;
-        width: 50%;
-        float: left;
-    }
-
-    #continue_back_right {
-        position: relative;
-        object-fit: cover;
-        object-position: 100% 0;
-        height: 100%;
-        width: 50%;
-        float: right;
-    }
-
-    #continue_obj_left {
-        height: 22rem;
-        left: 5%;
-        bottom: 3rem;
-    }
-
-    #continue_obj_right {
-        height: 23rem;
-        right: 1%;
-        bottom: 2rem;
-    }
-
-    #continue_info {
-        position: absolute;
-        width: 50%;
-        top: 60%;
-        left: 45%;
-        transform: translate(-50%, -50%);
-        background-color: $backgroundColor;
-        color: $darkTextColor;
-        padding: 1rem;
-
-        h2 {
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            font-size: 2rem;
+.desktop {
+    .continue_Sec {
+        #continue_back_left {
+            position: relative;
+            object-fit: cover;
+            object-position: 0 0;
+            height: 100%;
+            width: 50%;
+            float: left;
         }
 
-        p {
-            font-size: 1rem;
+        #continue_back_right {
+            position: relative;
+            object-fit: cover;
+            object-position: 100% 0;
+            height: 100%;
+            width: 50%;
+            float: right;
+        }
+
+        #continue_obj_left {
+            height: 22rem;
+            left: 5%;
+            bottom: 3rem;
+        }
+
+        #continue_obj_right {
+            height: 23rem;
+            right: 1%;
+            bottom: 2rem;
+        }
+
+        #continue_info {
+            position: absolute;
+            width: 50%;
+            top: 60%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            background-color: $TextbackgroundColor;
+            color: $darkTextColor;
+            padding: 1rem;
+            z-index: 1;
+
+            h2 {
+                margin-bottom: 0.5rem;
+                font-weight: 500;
+                font-size: 2rem;
+            }
+
+            #continue_images_resp {
+                display: none;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.responsive {
+    .continue_Sec {
+
+        #continue_back_left,
+        #continue_obj_left {
+            display: none;
+        }
+
+        #continue_back_right {
+            background-color: $backgroundColor;
+            position: absolute;
+            object-fit: cover;
+            object-position: 100% 0;
+            height: 100%;
+            width: 100%;
+            float: right;
+        }
+
+        #continue_obj_right {
+            position: relative;
+            height: 23rem;
+            float: right;
+            top: 12rem;
+        }
+
+        #continue_info {
+            position: relative;
+            width: 100%;
+            background-color: $TextbackgroundColor;
+            color: $darkTextColor;
+
+            h2 {
+                margin-bottom: 0.5rem;
+                font-weight: 500;
+                font-size: 2rem;
+                padding: 1rem 1rem 0;
+            }
+
+            #continue_images_resp {
+                position: relative;
+                display: block;
+                overflow: hidden;
+
+                #continue_back_resp {
+                    position: absolute;
+                    object-fit: cover;
+                    background-color: $backgroundColor;
+                    height: 100%;
+                }
+
+                #continue_obj_resp {
+                    position: relative;
+                    height: 28rem;
+                    padding: 5rem 0 2rem 2rem;
+                }
+            }
+
+            p {
+                font-size: 1rem;
+                margin: 1rem;
+            }
         }
     }
 }
