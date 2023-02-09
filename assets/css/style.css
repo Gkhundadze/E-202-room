@@ -1,6 +1,6 @@
 @font-face {
   font-family: "mainFont";
-  src: url(../fonts/bpg_arial_2009.ttf) format("truetype");
+  src: url(../fonts/HelveticaNeue.ttc);
   font-display: swap;
 }
 @font-face {
@@ -480,7 +480,7 @@ header nav #tabs li:last-child {
   margin: 1rem;
 }
 
-#ecology_Sec #ecology_back_left {
+.desktop .ecology_Sec #ecology_back_left {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
@@ -490,8 +490,12 @@ header nav #tabs li:last-child {
   width: 50%;
   float: left;
 }
-#ecology_Sec #ecology_back_right {
-  position: relative;
+.desktop .ecology_Sec #ecology_obj_1 {
+  height: 25rem;
+  left: 1%;
+  bottom: 4rem;
+}
+.desktop .ecology_Sec #ecology_right #ecology_back_right {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 83% 0;
@@ -500,41 +504,103 @@ header nav #tabs li:last-child {
   width: 50%;
   float: right;
 }
-#ecology_Sec #ecology_obj_1 {
-  height: 25rem;
-  left: 1%;
-  bottom: 4rem;
-}
-#ecology_Sec #ecology_obj_2 {
+.desktop .ecology_Sec #ecology_right #ecology_obj_2 {
   height: 30rem;
   right: 15%;
   bottom: 3rem;
 }
-#ecology_Sec #ecology_obj_3 {
+.desktop .ecology_Sec #ecology_right #ecology_obj_3 {
   height: 22rem;
   right: 1%;
   bottom: 2rem;
 }
-#ecology_Sec #ecology_info {
+.desktop .ecology_Sec #ecology_info {
   position: absolute;
   top: 5%;
   left: 20%;
   width: 40%;
-  background-color: rgb(226, 244, 255);
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  max-height: 90%;
+  background-color: rgba(255, 255, 255, 0.9);
   color: rgba(51, 51, 51, 0.8235294118);
   padding: 1rem;
+  overflow: scroll;
+  z-index: 1;
 }
-#ecology_Sec #ecology_info h2 {
+.desktop .ecology_Sec #ecology_info h2 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   font-size: 2rem;
 }
-#ecology_Sec #ecology_info #ecology_info_p {
-  overflow: scroll;
+.desktop .ecology_Sec #ecology_info #ecology_images_resp {
+  display: none;
 }
-#ecology_Sec #ecology_info #ecology_info_p p {
+.desktop .ecology_Sec #ecology_info p {
   margin-top: 1rem;
   font-size: 1rem;
+}
+
+.responsive .ecology_Sec #ecology_back_left,
+.responsive .ecology_Sec #ecology_obj_1 {
+  display: none;
+}
+.responsive .ecology_Sec #ecology_right #ecology_back_right {
+  position: absolute;
+  background-color: rgb(226, 244, 255);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 80% 0;
+     object-position: 80% 0;
+  height: 100%;
+  width: 100%;
+  float: right;
+}
+.responsive .ecology_Sec #ecology_right #ecology_obj_2 {
+  position: relative;
+  height: 30rem;
+  right: 25%;
+  float: right;
+}
+.responsive .ecology_Sec #ecology_right #ecology_obj_3 {
+  position: absolute;
+  height: 22rem;
+  right: 1%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+.responsive .ecology_Sec #ecology_info {
+  position: relative;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgba(51, 51, 51, 0.8235294118);
+}
+.responsive .ecology_Sec #ecology_info h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 1rem 1rem 0;
+}
+.responsive .ecology_Sec #ecology_info #ecology_images_resp {
+  display: block;
+  background-color: rgb(226, 244, 255);
+  background-image: url(../images/03_ekologia_background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 27%;
+}
+.responsive .ecology_Sec #ecology_info #ecology_images_resp #ecology_obj_resp {
+  position: relative;
+  padding: 10rem 1rem 3rem;
+  left: 45%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-height: 35rem;
+}
+.responsive .ecology_Sec #ecology_info p {
+  font-size: 1rem;
+  margin: 1rem;
 }
 
 #little_Sec #little_back {
