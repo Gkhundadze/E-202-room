@@ -1,31 +1,76 @@
-#slider_Sec {
-    position: relative;
-    height: calc(100vh - 9.6rem);
+.desktop {
+    .slider_Sec {
+        position: relative;
+        height: calc(100vh - 9.6rem);
 
-    .mySlide {
-        position: absolute;
-        height: inherit;
-        transition: all 0.7s linear;
+        p {
+            display: none;
+        }
 
-        embed {
-            bottom: 0;
-            height: 100%;
-            width: auto;
+        .mySlide {
+            position: absolute;
+            height: inherit;
+            transition: all 0.7s linear;
+
+            embed {
+                bottom: 0;
+                height: 100%;
+                width: auto;
+            }
+
+            img{
+                display: none;
+            }
+        }
+
+        [class*="fa-angle-"] {
+            position: absolute;
+            font-size: 70px;
+            color: $lightTextColor;
+            background-color: rgba(255, 255, 255, 0.7);
+            top: 50%;
+            margin: 0.8rem;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+
+        .fa-angle-right {
+            right: 0;
         }
     }
+}
 
-    [class*="fa-angle-"] {
-        position: absolute;
-        font-size: 70px;
-        color: $lightTextColor;
-        background-color: rgba(255, 255, 255, 0.7);
-        top: 50%;
-        margin: 0.8rem;
-        padding: 0.5rem;
-        cursor: pointer;
-    }
 
-    .fa-angle-right {
-        right: 0;
+.responsive {
+    .slider_Sec {
+        position: relative;
+        background-color: $backgroundColor;
+
+        p {
+            color: $lightTextColor;
+            font-size: 1.6rem;
+            margin-left: 3rem;
+            position: fixed;
+        }
+
+        .mySlide {
+            position: relative;
+            height: 100%;
+            overflow: auto;
+
+            embed{
+                display: none;
+            }
+
+            img {
+                position: absolute;
+                height: 80%;
+                bottom: 0;
+            }
+        }
+
+        [class*="fa-angle-"] {
+            display: none;
+        }
     }
 }
