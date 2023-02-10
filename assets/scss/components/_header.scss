@@ -9,7 +9,7 @@ header {
 
         .fa-bars {
             float: left;
-            padding-right: 1rem;
+            padding-right: 0.8rem;
             color: $lightTextColor;
             font-size: x-large;
             display: none;
@@ -22,7 +22,7 @@ header {
         }
 
         p {
-            // font-family: "Nino_Mtavruli", sans-serif;
+            font-family: "mainFontp", sans-serif;
             color: $lightTextColor;
             font-size: 1.8rem;
             font-weight: 100;
@@ -84,7 +84,11 @@ header {
 
 @media only screen and (max-width: 890px) {
     header {
+        height: fit-content;
+
         #title {
+            padding-bottom: 0;
+
             .fa-bars {
                 display: block;
             }
@@ -144,6 +148,18 @@ header {
 
             #tabs[class~=openedNav] {
                 width: 15rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    header {
+        height: 4rem;
+
+        #title {
+            h1{
+                font-size: 1.5rem;
             }
         }
     }
