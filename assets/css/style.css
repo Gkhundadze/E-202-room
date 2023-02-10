@@ -677,34 +677,72 @@ header nav #tabs li:last-child {
   margin: 1rem;
 }
 
-#stars_Sec {
+.desktop .stars_Sec {
   background-image: url("../images/05_varsklavebi_background.svg");
   background-position-x: -10rem;
 }
-#stars_Sec img {
+.desktop .stars_Sec #stars_obj {
   height: 25rem;
   left: 13%;
   bottom: 10rem;
 }
-#stars_Sec #stars_info {
+.desktop .stars_Sec #stars_info {
   position: absolute;
   width: 70%;
   top: 50%;
   left: 60%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: rgb(226, 244, 255);
+  background-color: rgba(255, 255, 255, 0.9);
   color: rgba(51, 51, 51, 0.8235294118);
   padding: 1rem;
 }
-#stars_Sec #stars_info h2 {
+.desktop .stars_Sec #stars_info h2 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   font-size: 2rem;
 }
-#stars_Sec #stars_info p {
+.desktop .stars_Sec #stars_info #stars_resp_obj {
+  display: none;
+}
+.desktop .stars_Sec #stars_info p {
   font-size: 1rem;
   margin-top: 1rem;
+}
+
+.responsive .stars_Sec #stars_obj {
+  display: none;
+}
+.responsive .stars_Sec #stars_info {
+  position: relative;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgba(51, 51, 51, 0.8235294118);
+}
+.responsive .stars_Sec #stars_info h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 1rem 1rem 0;
+}
+.responsive .stars_Sec #stars_info #stars_resp {
+  display: block;
+  position: relative;
+  background-color: rgb(226, 244, 255);
+  background-image: url(../images/05_varsklavebi_background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 15%;
+}
+.responsive .stars_Sec #stars_info #stars_resp #stars_resp_obj {
+  position: relative;
+  padding: 0 2rem 7rem;
+  min-height: 20rem;
+  max-height: 30rem;
+}
+.responsive .stars_Sec #stars_info p {
+  font-size: 1rem;
+  margin: 1rem;
 }
 
 #love_Sec {
