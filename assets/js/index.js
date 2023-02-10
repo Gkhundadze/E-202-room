@@ -1,5 +1,7 @@
 const tabs = document.getElementById("tabs"); //navigation tabs
 const slide = document.querySelector(".mySlide"); //slide
+const respSlide = document.querySelector(".mySlide"); //responsive slide
+let slideRightEdge = false;
 const arrowLeft = document.querySelector("#arrow-left");
 const arrowRight = document.querySelector("#arrow-right");
 
@@ -89,7 +91,7 @@ function closeNav() {
 );
 
 function sizeChange() {
-    if (window.innerWidth > 890) {
+    if (window.innerWidth >= 890) {
         document.querySelector('main').classList.remove('responsive');
         document.querySelector('main').classList.add('desktop');
     } else {
@@ -97,3 +99,52 @@ function sizeChange() {
         document.querySelector('main').classList.remove('desktop');
     }
 }
+
+
+//responsive flows
+let touchstartX = 0
+let touchendX = 0
+
+//change tabs on left/right slide
+function nex_prev(current, n) {
+    for (let i = 0; i < tabsContent.length; i++) {
+        if (tabsContent[i].tabName == current) {
+            showSec(tabsContent[i + n].sectionName);
+        }
+    };
+}
+
+function checkDirection() {
+    const current = document.querySelector('.active').innerHTML;
+
+    if (touchendX - touchstartX < -80) {
+        if (current == "პროექტის შესახებ" || (current == "თავფურცელი" && !slideRightEdge)) { //right edge
+            return;
+        }
+        nex_prev(current, 1); //next tab
+    }
+
+    if (touchendX - touchstartX > 80) { //left edge
+        if (current == "თავფურცელი") {
+            return;
+        }
+        nex_prev(current, -1); //prev tab
+    }
+}
+
+document.addEventListener('touchstart', e => {
+    touchstartX = e.changedTouches[0].screenX
+});
+
+document.addEventListener('touchend', e => {
+    touchendX = e.changedTouches[0].screenX
+    checkDirection()
+});
+
+respSlide.addEventListener("scroll", () => {
+    if (respSlide.scrollLeft >= 2237 - window.innerWidth) {
+        slideRightEdge = true;
+    } else {
+        slideRightEdge = false;
+    }
+}, { passive: true });

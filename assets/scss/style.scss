@@ -1,6 +1,12 @@
 @font-face {
     font-family: "mainFont";
-    src: url(../fonts/HelveticaNeue.ttc);
+    src: url(../fonts/HelveticaNeue-01.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "mainFontp";
+    src: url(../fonts/HelveticaNeue-Thin-13.ttf) format("truetype");
     font-display: swap;
 }
 

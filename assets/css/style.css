@@ -1,6 +1,11 @@
 @font-face {
   font-family: "mainFont";
-  src: url(../fonts/HelveticaNeue.ttc);
+  src: url(../fonts/HelveticaNeue-01.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "mainFontp";
+  src: url(../fonts/HelveticaNeue-Thin-13.ttf) format("truetype");
   font-display: swap;
 }
 @font-face {
@@ -45,7 +50,7 @@ section[class~=show] {
   display: block;
 }
 
-.responsive {
+.hide {
   display: none;
 }
 
@@ -121,6 +126,7 @@ header #title h1 {
   font-weight: 600;
 }
 header #title p {
+  font-family: "mainFontp", sans-serif;
   color: #707070;
   font-size: 1.8rem;
   font-weight: 100;
@@ -242,22 +248,28 @@ header nav #tabs li:last-child {
     font-size: 1.5rem;
   }
 }
-#slider_Sec {
+.desktop .slider_Sec {
   position: relative;
   height: calc(100vh - 9.6rem);
 }
-#slider_Sec .mySlide {
+.desktop .slider_Sec p {
+  display: none;
+}
+.desktop .slider_Sec .mySlide {
   position: absolute;
   height: inherit;
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
 }
-#slider_Sec .mySlide embed {
+.desktop .slider_Sec .mySlide embed {
   bottom: 0;
   height: 100%;
   width: auto;
 }
-#slider_Sec [class*=fa-angle-] {
+.desktop .slider_Sec .mySlide img {
+  display: none;
+}
+.desktop .slider_Sec [class*=fa-angle-] {
   position: absolute;
   font-size: 70px;
   color: #707070;
@@ -267,8 +279,35 @@ header nav #tabs li:last-child {
   padding: 0.5rem;
   cursor: pointer;
 }
-#slider_Sec .fa-angle-right {
+.desktop .slider_Sec .fa-angle-right {
   right: 0;
+}
+
+.responsive .slider_Sec {
+  position: relative;
+  background-color: rgb(226, 244, 255);
+}
+.responsive .slider_Sec p {
+  color: #707070;
+  font-size: 1.6rem;
+  margin-left: 3rem;
+  position: fixed;
+}
+.responsive .slider_Sec .mySlide {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+}
+.responsive .slider_Sec .mySlide embed {
+  display: none;
+}
+.responsive .slider_Sec .mySlide img {
+  position: absolute;
+  height: 80%;
+  bottom: 0;
+}
+.responsive .slider_Sec [class*=fa-angle-] {
+  display: none;
 }
 
 .desktop .introduction_Sec {
