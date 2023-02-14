@@ -1,17 +1,19 @@
 .desktop {
     .little_Sec {
-        #little_back {
-            position: relative;
-            object-fit: cover;
-            object-position: 30% 0;
-            transform: translateX(-30%);
-            height: 100%;
-        }
+        #little_image {
+            #little_back {
+                position: absolute;
+                object-fit: cover;
+                object-position: 30% 0;
+                transform: translateX(-30%);
+                height: 100%;
+            }
 
-        #little_obj {
-            height: 15rem;
-            left: 5%;
-            bottom: 2rem;
+            #little_obj {
+                height: 15rem;
+                left: 5%;
+                bottom: 2rem;
+            }
         }
 
         #little_info {
@@ -39,21 +41,27 @@
 
 .responsive {
     .little_Sec {
-        #little_back {
-            background-color: $backgroundColor;
-            position: absolute;
-            object-fit: cover;
-            object-position: 35% 0;
-            height: 100%;
-            width: 100%;
-            float: right;
-        }
-
-        #little_obj {
+        #little_image {
             position: relative;
-            height: 15rem;
-            width: 100%;
-            top: 20rem;
+            height: fit-content;
+
+            #little_back {
+                background-color: $backgroundColor;
+                position: absolute;
+                object-fit: cover;
+                object-position: 35% 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            #little_obj {
+                position: relative;
+                width: 18rem;
+                padding-top: 15rem;
+                left: 43%;
+                transform: translateX(-50%);
+                margin-bottom: 2rem;
+            }
         }
 
         #little_info {
