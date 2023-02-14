@@ -16,13 +16,15 @@
         }
 
         #ecology_right {
-            #ecology_back_right {
-                object-fit: cover;
-                object-position: 83% 0;
-                height: 100%;
-                width: 50%;
-                float: right;
-            }
+            background-image: url('../images/03_ekologia_background.svg');
+            background-color: $backgroundColor;
+            background-position: right;
+            background-position-x: 83%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 50%;
+            float: right;
 
             #ecology_obj_2 {
                 height: 30rem;
@@ -77,26 +79,27 @@
         }
 
         #ecology_right {
-            #ecology_back_right {
-                position: absolute;
-                background-color: $backgroundColor;
-                object-fit: cover;
-                object-position: 80% 0;
-                height: 100%;
-                width: 100%;
-                float: right;
-            }
+            background-image: url('../images/03_ekologia_background.svg');
+            background-color: $backgroundColor;
+            background-position: right;
+            background-position-x: 85%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            display: flex;
 
             #ecology_obj_2 {
                 position: relative;
                 height: 30rem;
-                right: 25%;
-                float: right;
+                padding-top: 3rem;
+                width: 100%;
+                padding-right: 3rem;
             }
 
             #ecology_obj_3 {
                 position: absolute;
-                height: 22rem;
+                height: 20rem;
                 right: 1%;
                 transform: translateY(50%);
             }
@@ -122,7 +125,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: 27%;
-    
+
                 #ecology_obj_resp {
                     position: relative;
                     padding: 10rem 1rem 3rem;
@@ -135,6 +138,21 @@
             p {
                 font-size: 1rem;
                 margin: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .responsive {
+        .ecology_Sec {
+            #ecology_right {
+                justify-content: flex-start;
+
+                #ecology_obj_2 {
+                    width: fit-content;
+                    padding-left: 0.5rem;
+                }
             }
         }
     }
