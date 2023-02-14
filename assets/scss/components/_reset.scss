@@ -15,17 +15,22 @@ body {
 }
 
 section {
+    animation-name: slide_up;
+    animation-duration: 0.4s;
     display: none;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(100vh - 9.6rem);
-    overflow: hidden;
-    animation-name: slide_up;
-    animation-duration: 0.4s;
+}
 
-    img {
-        position: absolute;
+.desktop {
+    section {
+        height: calc(100vh - 9.6rem);
+        overflow: hidden;
+
+        img {
+            position: absolute;
+        }
     }
 }
 
@@ -53,21 +58,21 @@ h6 {
 }
 
 @media screen and (max-width: 890px) {
-    body {
-        background-color: white;
+    html {
+        overflow: scroll;
     }
 
-    .desktop {
-        display: none;
+    body {
+        background-color: white;
+        overflow: hidden;
+        height: fit-content;
     }
 
     .responsive {
         display: block;
 
-        section{
+        section {
             position: relative;
-            overflow: scroll;
-            height: calc(100vh - 4rem);
         }
     }
 }

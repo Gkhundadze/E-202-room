@@ -18,7 +18,7 @@
                 width: auto;
             }
 
-            img{
+            img {
                 display: none;
             }
         }
@@ -40,7 +40,6 @@
     }
 }
 
-
 .responsive {
     .slider_Sec {
         position: relative;
@@ -55,10 +54,10 @@
 
         .mySlide {
             position: relative;
-            height: 100%;
+            height: calc(100vh - 4rem);
             overflow: auto;
 
-            embed{
+            embed {
                 display: none;
             }
 
