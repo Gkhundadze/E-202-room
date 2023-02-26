@@ -85,22 +85,6 @@ function closeNav() {
     tabs.classList.remove('openedNav')
 }
 
-//listen windows size on resize and load
-['resize', 'load'].forEach(evt =>
-    window.addEventListener(evt, sizeChange)
-);
-
-function sizeChange() {
-    if (window.innerWidth >= 890) {
-        document.querySelector('main').classList.remove('responsive');
-        document.querySelector('main').classList.add('desktop');
-    } else {
-        document.querySelector('main').classList.add('responsive');
-        document.querySelector('main').classList.remove('desktop');
-    }
-}
-
-
 //responsive flows
 let touchstartX = 0
 let touchendX = 0
