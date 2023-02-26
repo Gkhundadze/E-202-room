@@ -393,7 +393,7 @@ header nav #tabs li:last-child {
 .responsive .three_Sec .three_Sec_resp {
   display: block;
   background-color: rgb(226, 244, 255);
-  background-image: url(../images/01_samiPigura_background.svg);
+  background-image: url("../images/01_samiPigura_background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 52%;
