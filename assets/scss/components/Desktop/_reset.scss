@@ -21,16 +21,11 @@ section {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.desktop {
-    section {
-        height: calc(100vh - 9.6rem);
-        overflow: hidden;
-
-        img {
-            position: absolute;
-        }
+    height: calc(100vh - 9.6rem);
+    overflow: hidden;
+    
+    img {
+        position: absolute;
     }
 }
 
@@ -54,25 +49,5 @@ h6 {
 @media screen and (min-width: 1980px) {
     :root {
         font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 890px) {
-    html {
-        overflow: scroll;
-    }
-
-    body {
-        background-color: white;
-        overflow: hidden;
-        height: fit-content;
-    }
-
-    .responsive {
-        display: block;
-
-        section {
-            position: relative;
-        }
     }
 }

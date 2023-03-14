@@ -8,37 +8,55 @@
     <meta property="og:url" content="" />
     <meta property="og:type" content="Page" />
     <meta property="og:title" content="ალეგორიული პანო" />
-    <meta property="og:description" content="მეცნიერების, ადამიანი და მისი უსაზღვრო შესაძლებლობების შესახებ" />
-    <meta name="description" content="მეცნიერების, ადამიანი და მისი უსაზღვრო შესაძლებლობების შესახებ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/index.js" defer></script>
-    <title>E202</title>
+    <meta property="og:description" content="მეცნიერების, ადამიანის და მისი უსაზღვრო შესაძლებლობების შესახებ" />
+    <meta name="description" content="მეცნიერების, ადამიანის და მისი უსაზღვრო შესაძლებლობების შესახებ">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <script src="./assets/js/index.min.js" defer></script>
+    <title>ალეგორიული პანო</title>
 </head>
 
 <body>
     <header>
         <div id="title">
-            <i class="fa-solid fa-bars" onclick="openNav()"></i>
+            <svg class="bars" onclick="openNav()" fill="#707070"
+                viewBox="0 0 448 512">
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
             <h1>ალეგორიული პანო</h1>
             <p>მეცნიერების, ადამიანის და მისი უსაზღვრო შესაძლებლობების შესახებ</p>
         </div>
         <nav id="navigation">
             <ul id="tabs">
-                <li id="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></li>
+                <li id="closebtn" onclick="closeNav()">
+                    <svg class="xmark" xmlns="http://www.w3.org/2000/svg" fill="#707070" viewBox="0 0 320 512">
+                        <path
+                            d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                    </svg>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main class="desktop">
+    <main>
         <section class="slider_Sec show">
             <p>მეცნიერების, ადამიანის და მისი უსაზღვრო შესაძლებლობების შესახებ</p>
             <div class="mySlide">
                 <embed src="./assets/images/slide.svg" type="image/svg+xml" />
                 <img src="./assets/images/slide_responsive.svg" alt="slider">
             </div>
-            <i id="arrow-left" class="fa-solid fa-angle-left" onclick="plusSlides(-1)"></i>
-            <i id="arrow-right" class="fa-solid fa-angle-right" onclick="plusSlides(1)"></i>
+
+            <svg id="arrow-left" class="angle-left" onclick="plusSlides(-1)" xmlns="http://www.w3.org/2000/svg"
+                fill="#707070" viewBox="0 0 320 512">
+                <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+            </svg>
+
+            <svg id="arrow-right" class="angle-right" onclick="plusSlides(1)" xmlns="http://www.w3.org/2000/svg"
+                fill="#707070" viewBox="0 0 320 512">
+                <path
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+            </svg>
         </section>
 
         <section class="introduction_Sec">
