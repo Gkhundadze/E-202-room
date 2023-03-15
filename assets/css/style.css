@@ -547,16 +547,12 @@ h6 {
   }
   header nav #tabs #closebtn {
     position: relative;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: auto;
   }
   header nav #tabs #closebtn .xmark {
     position: relative;
     left: -1.5rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: auto;
     height: 2.2rem;
   }
   header nav #tabs li {
