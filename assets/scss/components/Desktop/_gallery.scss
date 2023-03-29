@@ -2,7 +2,11 @@
     padding: 5rem 0;
     background-color: white;
     height: fit-content;
-    
+
+    h2 {
+        display: none;
+    }
+
     #shownslideContainer {
         display: none;
     }
