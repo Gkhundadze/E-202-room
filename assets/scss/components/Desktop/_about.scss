@@ -2,7 +2,8 @@
     background-color: white;
     color: $darkTextColor;
     padding: 5% 5% 0 5%;
-    overflow: scroll;
+    height: fit-content;
+    // overflow: scroll;
 
     h2 {
         display: none;
